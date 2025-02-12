@@ -1,0 +1,30 @@
+{
+  "name": "smpp-node-server",
+  "version": "1.0.0",
+  "description": "SMPP Running Server",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vasilis-tsatalis/smpp-node-server.git"
+  },
+  "keywords": [
+    "SMPP"
+  ],
+  "author": "Vasilis Tsatalis",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vasilis-tsatalis/smpp-node-server/issues"
+  },
+  "homepage": "https://github.com/vasilis-tsatalis/smpp-node-server#readme",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "smpp": "^0.6.0-rc.4",
+    "uuid": "^11.0.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
