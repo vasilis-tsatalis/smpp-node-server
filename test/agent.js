@@ -13,8 +13,8 @@ session.bind_transceiver({
 
         // Send a test SMS
         session.submit_sm({
-            destination_addr: '+1234567890',
-            short_message: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.vjkwvkbvjksvbk21Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+            destination_addr: '+30698877666',
+            short_message: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
         }, (pdu) => {
             if (pdu.command_status === 0) {
                 console.log('Message sent successfully, ID:', pdu.message_id);

@@ -4,7 +4,10 @@
   "description": "SMPP Running Server",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node server.js",
+    "cli": "node test/client.js",
+    "agent": "node test/agent.js"
   },
   "repository": {
     "type": "git",

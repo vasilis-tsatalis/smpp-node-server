@@ -7,6 +7,7 @@ smpp.encodings.default = process.env.ENCODING;
 
 const server = smpp.createServer((session) => {
     console.log('SMPP session connected');
+    //console.log('Session: ', session);
 
     session.on('bind_transceiver', (pdu) => {
         console.log('Received bind_transceiver request:', pdu.system_id);
@@ -27,6 +28,7 @@ const server = smpp.createServer((session) => {
 
     session.on('submit_sm', (pdu) => {
         console.log('Received SMS:', pdu.short_message.message);
+        //console.log('PDU: ', pdu);
 
         // Respond with success
         session.send(pdu.response({
